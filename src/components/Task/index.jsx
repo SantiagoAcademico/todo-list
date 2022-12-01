@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsFillXCircleFill, BsFillExclamationCircleFill } from "react-icons/bs";
+import { IoTrashOutline } from "react-icons/io5";
 import { Button, Container, ContainerButtons, TitleTask } from './style'
 
 export const Task = ({ task, handleTaskClick, handleTaskRemove }) => {
@@ -15,11 +15,8 @@ export const Task = ({ task, handleTaskClick, handleTaskRemove }) => {
                 {task.title}
             </TitleTask>
             <ContainerButtons>
-                <Button >
-                    <BsFillExclamationCircleFill style={{ fill: "#272b32", width: "2rem", height: "2rem" }} />
-                </Button>
                 <Button onClick={() => handleTaskRemove(task.id)}>
-                    <BsFillXCircleFill style={{ fill: "#272b32", width: "2rem", height: "2rem" }} />
+                    <IoTrashOutline />
                 </Button>
             </ContainerButtons>
 

@@ -26,7 +26,7 @@ export const HeaderList = ({ handleTaskAddition }) => {
                     placeholder='Adicione uma tarefa.'
                 />
                 <Button onClick={handleAddTaskClick}>
-                    adicionar
+                    criar
                     <IoAddCircleOutline />
                 </Button>
             </InputArea>

@@ -1,21 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 3em;
+    width: 98%;
+    max-width: 1000px;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
     border-radius: 9px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-grey-500);
+    color: #fff;
     border-left: 10px solid transparent;
 
     svg{
-        width: 2rem;
-        fill: #fff;
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #fff;
     }
 
 `
@@ -24,12 +25,11 @@ export const TitleTask = styled.h2`
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 500;
+    margin: 1em 0;
 `
 export const ContainerButtons = styled.div`
-    width: 10%;
     display: flex;
     align-items: center;
-    gap: .5rem;
     justify-content: space-between;
 `
 
